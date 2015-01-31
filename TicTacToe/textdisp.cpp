@@ -22,7 +22,7 @@ void displayBoard(Board *board) {
         cout << endl;
         for(int col = 0; col < size; col++) {
             cout << "|";
-            cout << board->getBoardSquare(row+col).getPlayer();
+            cout << board->getBoardSquare(row*size+col).getPlayer();
         }
         cout << "|" << endl;
     }
