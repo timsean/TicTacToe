@@ -15,6 +15,7 @@
 
 class RandomSolver : public Solver {
 public:
+    RandomSolver();
     Move getNextMove(char, Board*);
 };
 

@@ -12,9 +12,9 @@
 
 using namespace std;
 
-void displayBoard(Board board) {
+void displayBoard(Board *board) {
     // draw the board in command line
-    short size = board.getSize();
+    short size = board->getSize();
     for(int row = 0; row < size; row++) {
         for(int a = 0; a < size*2+1; a++) {
             cout << "-";
@@ -22,7 +22,7 @@ void displayBoard(Board board) {
         cout << endl;
         for(int col = 0; col < size; col++) {
             cout << "|";
-            cout << board.getBoardSquare(row+col).getPlayer();
+            cout << board->getBoardSquare(row+col).getPlayer();
         }
         cout << "|" << endl;
     }

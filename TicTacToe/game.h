@@ -20,7 +20,7 @@ class Game {
 public:
     Game(); //Default constructor
     Game(short, Player, Player);
-    Board getBoard();
+    Board *getBoard();
 };
 
 #endif /* defined(__TicTacToe__game__) */

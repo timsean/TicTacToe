@@ -16,6 +16,8 @@ public:
     int x, y;
     Move();
     Move(int, int);
+    bool operator== (const Move&);
+    void operator= (const Move&);
 };
 
 #endif /* defined(__TicTacToe__move__) */

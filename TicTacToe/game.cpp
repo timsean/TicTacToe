@@ -9,6 +9,7 @@
 #include "board.h"
 #include "player.h"
 #include "aiminimax.h"
+#include "randomsolve.h"
 #include "textdisp.h"
 #include "game.h"
 
@@ -22,6 +23,6 @@ Game::Game(short size, Player player1, Player player2) {
     this->player2 = player2;
 }
 
-Board Game::getBoard() {
-    return board;
+Board *Game::getBoard() {
+    return &board;
 }

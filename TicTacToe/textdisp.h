@@ -10,8 +10,9 @@
 #define __TicTacToe__textdisp__
 
 #include <stdio.h>
+#include "board.h"
 
-void displayBoard(Board board);
+void displayBoard(Board *board);
 
 #endif /* defined(__TicTacToe__textdisp__) */
 

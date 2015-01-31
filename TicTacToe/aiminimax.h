@@ -15,7 +15,7 @@
 class AiMinimax: public Solver {
     int test;
 public:
-    Move getNextMove(char);
+    //Move getNextMove(char, Board);
 };
 
 #endif /* defined(__TicTacToe__aiminimax__) */

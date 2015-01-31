@@ -18,19 +18,19 @@ using namespace std;
 
 class Board {
     short size; // Board size is size * size
-    BoardSquare *board; // Array of board squares
-    vector<short> openMoves; // Array keeping track of what moves are available
+    vector<BoardSquare> board; // Array of board squares
+    vector<Move> openMoves; // Array keeping track of what moves are available
     short filled; // Number of squares filled
     bool hasWinner = false;
     char winner;
 public:
     Board(short);
     bool isOngoing();
-    vector<short> *getOpenMoves();
+    vector<Move> getOpenMoves();
     void makeMove(char, Move);
     // Getters
     short getSize();
-    BoardSquare getBoardSquare(short);
+    BoardSquare getBoardSquare(int);
 private:
     void calculateWinner(char, Move);
 };
